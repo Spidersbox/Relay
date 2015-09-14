@@ -4,58 +4,55 @@ Control one or more HID API USB relay cards
 <hr>
 <br>
 ### Usage
-relay
-relay, version 1.0  date Sept. 13, 2015
-Use to control one or more HIDAPI relay cards.
 
-relay [-i] card information
-relay [relay number] check the state of the relay.
-relay [<relay number>] [on | off] to set the state of the relay.
-relay [<relay number>] [pulse] to turn on for 10 seconds, then off.
+relay [-i] card information<br>
+relay [relay number] check the state of the relay.<br>
+relay [relay number]  [on | off] to set the state of the relay.<br>
+relay [relay number]  [pulse] to turn on for 10 seconds, then off.<br>
 
-relay [all] returns the state of all relays.
-relay [<all>] [on | off] to set the state of all the relays.
-relay [<all>] [pulse] to turn on all relays for 10 seconds, then off.
+relay [all] returns the state of all relays.<br>
+relay [all]  [on | off] to set the state of all the relays.<br>
+relay [all]  [pulse] to turn on all relays for 10 seconds, then off.<br>
 
 
 ### Examples
-In these examples, I have two relay cards plug into my Banana PI.
-Each card has two relays.
+In these examples, I have two relay cards plug into my Banana PI.<br>
+Each card has two relays.<br>
 
 * relay -i
 <pre>
-Device Found
-  Type: 16c0 05df
-  Path: 0004:0002:00
-  Number of Relays = 2
-  Device ID: X162W
-  relay 1 is OFF
-  relay 2 is OFF
-
-Device Found
-  Type: 16c0 05df
-  Path: 0002:0002:00
-  Number of Relays = 2
-  Device ID: 78J67
-  relay 3 is OFF
-  relay 4 is OFF
+ Device Found
+   Type: 16c0 05df
+   Path: 0004:0002:00
+   Number of Relays = 2
+   Device ID: X162W
+   relay 1 is OFF
+   relay 2 is OFF
+  <br>
+ Device Found
+   Type: 16c0 05df
+   Path: 0002:0002:00
+   Number of Relays = 2
+   Device ID: 78J67
+   relay 3 is OFF
+   relay 4 is OFF
 </pre>
 
 * relay all
 <pre>
-Relay 1 is OFF
-Relay 2 is OFF
-Relay 3 is OFF
-Relay 4 is OFF
+ Relay 1 is OFF
+ Relay 2 is OFF
+ Relay 3 is OFF
+ Relay 4 is OFF
 </pre>
 
 * relay 3 on
 <pre>
-this does not print out any thing, but if you do 'relay all' again:
-Relay 1 is OFF
-Relay 2 is OFF
-Relay 3 is ON
-Relay 4 is OFF
+ this does not print out any thing, but if you do 'relay all' again:
+ Relay 1 is OFF
+ Relay 2 is OFF
+ Relay 3 is ON
+ Relay 4 is OFF
 <pre>
 
 <br>
