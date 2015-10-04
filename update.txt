@@ -1,0 +1,5 @@
+10/04/2015 added small sort for cards.
+           with multiple cards, the first relay on the first discovered
+           card is #1. if you change the locations of the usb plugs, a
+           different card could be discovered first - #1 wouldn't be #1.
+           The simple sort (hopefully) fixes this.
