@@ -95,6 +95,19 @@ int main( int argc, char *argv[])
   }// end while
 
 
+//*************************************************
+//*****************  sort cards *******************
+  struct cards temp[1];
+  int i;
+  for(i=0;i<total_cards;i++)
+  {
+    if(card[i].sn[0] > card[i+1].sn[0])
+    {
+      temp[0]=card[i];
+      card[i]=card[i+1];
+      card[i+1]=temp[0];
+    }
+  }
 //**************************************************
 //***************  parse commands  *****************
 
@@ -106,7 +119,9 @@ int main( int argc, char *argv[])
     if(!strcasecmp(argv[1],"-i"))
       ListDevices(card,total_cards);
 
+// try to turn the first arg into an init.
     int search=atoi(argv[1]);
+
     if(search) // if it is an int larger than 0
     {
       if(search>total_relays)
@@ -182,7 +197,7 @@ int main( int argc, char *argv[])
             }
           }
         }
-      }
+      }// endif argv[1]==all
 //printf("command is: %s.\n",argv[1]);
     }
   }
