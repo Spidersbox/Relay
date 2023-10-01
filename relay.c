@@ -97,6 +97,7 @@ int main( int argc, char *argv[])
 
 //*************************************************
 //*****************  sort cards *******************
+/*
   struct cards temp[1];
   int i;
   for(i=0;i<total_cards;i++)
@@ -108,6 +109,7 @@ int main( int argc, char *argv[])
       card[i+1]=temp[0];
     }
   }
+*/
 //**************************************************
 //***************  parse commands  *****************
 
