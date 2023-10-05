@@ -53,15 +53,15 @@ Each card has two relays.<br>
  Relay 2 is OFF
  Relay 3 is ON
  Relay 4 is OFF
-<pre>
+</pre>
 
 <br>
 <hr>
 <br>
-### Installation from source
-The installation procedure is usually perfomed directly on the target system.<br>
-Therefore a C compiler and friends should already be installed.<br>
-Otherwise a cross compilation environment needs to be setup on a PC<br>
+### Installation
+The installation procedure is usually perfomed directly on the target system.
+Therefore a C compiler and dependencies should already be installed.
+Otherwise a cross compilation environment needs to be setup on a PC
 (this is not described here).  
 
 * Install dependencies (package names may vary depending on your distribution):
@@ -69,9 +69,9 @@ Otherwise a cross compilation environment needs to be setup on a PC<br>
     apt-get install build-essential libhidapi-dev libusb-1.0-0 libusb-1.0-0-dev
 </pre>
 
-* Build dependencies from source (optional):<br>
-On some not so recent Linux distributions (like Debian Weezy) the HIDAPI library<br>
-is not yet packaged, so it needs to be build from the source code.<br>
+* Build dependencies from source (optional):
+On some not so recent Linux distributions (like Debian Weezy) the HIDAPI library
+is not yet packaged, so it needs to be build from the source code.
 Follow these instructions to do that:
 <pre>
     apt-get install libudev-dev libusb-1.0-0-dev
