@@ -58,11 +58,12 @@ Each card has two relays.<br>
 <br>
 <hr>
 <br>
+
 ### Installation
-The installation procedure is usually perfomed directly on the target system.
-Therefore a C compiler and dependencies should already be installed.
-Otherwise a cross compilation environment needs to be setup on a PC
-(this is not described here).  
+The installation procedure is usually perfomed directly on the target system.<br>
+Therefore a C compiler and dependencies should already be installed.<br>
+Otherwise a cross compilation environment needs to be setup on a PC<br>
+(this is not described here).<br>
 
 * Install dependencies (package names may vary depending on your distribution):
 <pre>
@@ -70,8 +71,8 @@ Otherwise a cross compilation environment needs to be setup on a PC
 </pre>
 
 * Build dependencies from source (optional):
-On some not so recent Linux distributions (like Debian Weezy) the HIDAPI library
-is not yet packaged, so it needs to be build from the source code.
+On some not so recent Linux distributions (like Debian Weezy)<br>
+the HIDAPI library is not yet packaged, so it needs to be build from the source code.<br>
 Follow these instructions to do that:
 <pre>
     apt-get install libudev-dev libusb-1.0-0-dev
