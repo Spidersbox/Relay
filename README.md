@@ -97,8 +97,14 @@ Follow these instructions to do that:
 <pre>
     sudo cp relay /usr/bin/
 </pre>
-
-<br>  
+<br>
+* to use without sudo:
+<pre>
+sudo cp 50relays.rules /etc/udev/rules.d/
+udo reboot
+</pre>
+<br>
+<br> 
 <hr>
 <br>
 ### Credits
