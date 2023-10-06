@@ -101,7 +101,7 @@ Follow these instructions to do that:
 * to use without sudo:
 <pre>
 sudo cp 50relays.rules /etc/udev/rules.d/
-udo reboot
+sudo reboot
 </pre>
 <br>
 <br> 
